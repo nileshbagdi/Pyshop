@@ -1,0 +1,21 @@
+<h1>Students data</h1>
+
+
+<table class="table table-dark">
+    <tr>
+        <th scope="col">Name</th>
+        <th scope="col">RollNO</th>
+        <th scope="col">Class</th>
+
+    </tr>
+    <tbody>
+  {% for items in Product %}
+    <tr>
+      <th scope="row">{{items.Name}}</th>
+      <td>{{items.RollNo}}</td>
+      <td>{{items.Class}}</td>
+
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>

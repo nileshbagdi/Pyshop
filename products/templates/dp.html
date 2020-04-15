@@ -1,0 +1,53 @@
+<h1>Deployable Pool Sheet</h1>
+>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">PSNO</th>
+      <th scope="col">Name</th>
+      <th scope="col">Grade</th>
+      <th scope="col">DeptLoc</th>
+      <th scope="col">Billed Status</th>
+      <th scope="col">Skills</th>
+      <th scope="col">Action Category</th>
+      <th scope="col">Action Sub Category</th>
+      <th scope="col">Active Accounts</th>
+      <th scope="col">Proposed Accounts</th>
+      <th scope="col">Remarks</th>
+      <th scope="col">Selected Date</th>
+      <th scope="col">Customer Name</th>
+      <th scope="col">Release To PU Date</th>
+      <th scope="col">Start Date</th>
+      <th scope="col">End Date</th>
+      <th scope="col">Unbilled Age in Current BU</th>
+      <th scope="col">Mobile</th>
+      <th scope="col">Agging Bucket(Days)</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for items in dp_data %}
+    <tr>
+      <th scope="row">{{items.PSNO}}</th>
+      <td>{{items.Name}}</td>
+      <td>{{items.Grade}}</td>
+      <td>{{items.DeptLoc}}</td>
+        <td>{{items.Billedstatuts}}</td>
+        <td>{{items.Skill}}</td>
+        <td>{{items.ActionCategory}}</td>
+        <td>{{items.ActionSubCategory}}</td>
+        <td>{{items.ActiveAccount}}</td>
+        <td>{{items.ProposedAccounts}}</td>
+        <td>{{items.Remarks}}</td>
+        <td>{{items.SelectedDate}}</td>
+        <td>{{items.CustomerName}}</td>
+        <td>{{items.ReleaseTOPUDate}}</td>
+        <td>{{items.StartDate}}</td>
+        <td>{{items.EndDate}}</td>
+        <td>{{items.UnbilledAgeInCurrentBU}}</td>
+        <td>{{items.Mobile}}</td>
+        <td>{{items.AgingBucket}}</td>
+
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>

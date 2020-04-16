@@ -1,20 +1,6 @@
 from django.db import models
 
 
-
-class products(models.Model):
-    Name = models.CharField(max_length=255)
-    RollNo = models.FloatField()
-    Class = models.IntegerField()
-    Address = models.CharField(max_length=3000)
-
-
-class offers(models.Model):
-    code = models.CharField(max_length=10)
-    description = models.CharField(max_length=255)
-    discount = models.FloatField()
-
-
 class Deployable_Pool(models.Model):
     PSNO= models.FloatField(default='PS NO',null=True, blank=True)
     Name = models.CharField(max_length=2555, null=True, blank=True)
@@ -61,14 +47,3 @@ class RRDump(models.Model):
     BillingEndDate = models.CharField(max_length=2555, null=True, blank=True)
     JobDescription = models.CharField(max_length=2555, null=True, blank=True)
     ClientLoc = models.CharField(max_length=2555, null=True, blank=True)
-
-
-
-class Manpower(models.Model):
-    Customer_Namee = models.CharField(max_length=2555, null=True, blank=True)
-
-class Rotation(models.Model):
-    Customer_Nameee = models.CharField(max_length=2555, null=True, blank=True)
-
-class Academy(models.Model):
-    Customer_Namee = models.CharField(max_length=2555, null=True, blank=True)
